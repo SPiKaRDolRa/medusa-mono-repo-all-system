@@ -1,0 +1,4 @@
+packages:
+  - 'medusa-store'
+  - 'medusa-store-storefront'
+  - 'medusa-plugin-shipping'

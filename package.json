@@ -1,0 +1,23 @@
+{
+  "name": "medusa-102",
+  "version": "0.0.1",
+  "private": true,
+  "description": "test-medusa-workspace-plugin-shipping",
+  "packageManager": "pnpm@8.15.4",
+  "scripts": {
+    "dev": "concurrently -k -n BACKEND,STORE,PLUGIN -c green,blue,magenta \"npm run dev --workspace medusa-store-101\" \"npm run dev --workspace medusa-store-101-storefront\" \"npm run watch --workspace medusa-plugin-shipping\"",
+    "reset:dev": "redis-cli flushall && rm -rf .next dist medusa-store-101/node_modules/.cache && npm run dev"
+  },
+  "workspaces": [
+    "medusa-store",
+    "medusa-store-storefront",
+    "medusa-plugin-shipping"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.0.0"
+  },
+  "resolutions": {
+    "eslint": "^8.57.0"
+  },
+  "author": "SPiKaR"
+}

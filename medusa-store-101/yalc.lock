@@ -1,0 +1,9 @@
+{
+  "version": "v1",
+  "packages": {
+    "medusa-plugin-shipping": {
+      "signature": "658c7f44d3f5f61056a378221fab80cf",
+      "file": true
+    }
+  }
+}
